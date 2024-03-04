@@ -17,6 +17,8 @@ from tqdm import tqdm
 local_path = osp.dirname(osp.abspath(__file__))
 
 
+
+
 def centroids_init(model, data_dir, datasetTrain, composed_transforms):
     centroids = torch.zeros(3, 304, 64, 64).cuda() # 3 means the number of source domains
     model.eval()
